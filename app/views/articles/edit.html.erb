@@ -1,0 +1,12 @@
+<%= form_for(@article) do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+
+  <%= f.label :content %>
+  <%= f.text_field :content %>
+
+  <%= f.submit class: 'btn btn-primary' %>
+<% end %>
+<div class="btn btn-danger" >
+  <%= link_to "Back to article list", articles_path %>
+</div>

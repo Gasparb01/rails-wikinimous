@@ -1,0 +1,8 @@
+<h1 class="text-center pb-5">BEST WORLD WIDE COFFE</h1>
+<div class="pl-5">
+  <% @articles.each do |article| %>
+    <h2 class="text-primary"><%= link_to article.title, article_path(article) %></h2>
+    <h3><%= article.content %></h3>
+  <% end %>
+</div>
+

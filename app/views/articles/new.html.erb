@@ -1,0 +1,13 @@
+<div class="ml-5 text-center">
+  <%= simple_form_for @article, class: 'form' do |f| %>
+     <%= f.input :title, label: 'coffe title' %>
+     <%= f.input :content %>
+     <%= f.button :submit, class: 'btn btn-primary' %>
+   <% end %>
+  <br>
+  <br>
+  <br>
+  <div>
+    <%= link_to "Back to article list", articles_path, class: "btn btn-primary" %>
+  </div>
+</div>

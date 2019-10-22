@@ -1,0 +1,15 @@
+<div class="pl-5">
+  <h1><%= @article.title %></h1>
+  <p><%= @article.content %></p>
+</div>
+<div class="btn ml-5">
+ <%= link_to "Edit article", edit_article_path, class: "btn btn-primary"  %>
+</div>
+<br>
+<br>
+<div class="btn ml-5">
+  <%= link_to "Back to article list", articles_path, class: "btn btn-primary"%>
+</div>
+<br>
+<br>
+<br>
